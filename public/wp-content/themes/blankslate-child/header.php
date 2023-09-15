@@ -1,37 +1,21 @@
-<?php
-/**
- * The header.
- *
- * This is the template that displays all of the <head> section and everything up until main.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
- */
-
-?>
-<!doctype html>
-<html <?php language_attributes(); ?> <?php twentytwentyone_the_html_classes(); ?>>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?> <?php blankslate_schema_type(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<?php wp_head(); ?>
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width" />
+<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content">
-		<?php
-		/* translators: Hidden accessibility text. */
-		esc_html_e( 'Skip to content', 'twentytwentyone' );
-		?>
-	</a>
-
-	<?php get_template_part( 'template-parts/header/site-header' ); ?>
-
-	<div id="content" class="site-content">
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main">
+<div id="wrapper" class="hfeed">
+<header id="header" role="banner">
+<div id="branding">
+<div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
+</div>
+<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
+<div><img src="planty.png" alt=""><p id="test">energy drink</p></div>
+</nav>
+</header>
+<div id="container">
+<main id="content" role="main">
