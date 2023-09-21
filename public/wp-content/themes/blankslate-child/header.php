@@ -13,11 +13,12 @@
 <div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
 </div>
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-<div>
-    <img src="planty.png" alt="">
-    <p id="test">energy drink</p>
-</div>
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
+<?php 
+if ( function_exists( 'the_custom_logo' ) ) {
+	the_custom_logo();
+}
+
+wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
 
 </nav>
 </header>
