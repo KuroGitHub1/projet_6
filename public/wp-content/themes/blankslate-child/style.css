@@ -15,18 +15,15 @@ Updated: 2023-09-15 13:03:32
 #header {
   display: flex;
   height: 80px;
-  background-color: blueviolet;
 }
 
 nav {
   display: flex;
-  background-color: aqua;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  background-color: red;
 }
 
 #test {
