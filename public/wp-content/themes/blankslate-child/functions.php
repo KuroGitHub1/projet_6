@@ -27,8 +27,8 @@ add_action('after_setup_theme','logo_support');
 if ( !function_exists('logo_support')){
     function logo_support(){
         add_theme_support('custom-logo', array(
-            'height' => 18,
-            'wigth' => 191,
+            
+            'width' => 'thumbnail',
         ));
     }
 }
