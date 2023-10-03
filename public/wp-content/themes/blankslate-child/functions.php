@@ -22,6 +22,31 @@ endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+//ajout compteur
+function compteur_quantite_shortcode() {
+    ob_start();
+    session_start(); // Démarrez une session (si ce n'est pas déjà fait)
+    if (!isset($_SESSION['quantity'])) {
+        $_SESSION['quantity'] = 0;
+    }
+
+    if (isset($_POST['increment'])) {
+        $_SESSION['quantity']++;
+    } elseif (isset($_POST['decrement']) && $_SESSION['quantity'] > 0) {
+        $_SESSION['quantity']--;
+    }
+    ?>
+
+    <form method="post" action="">
+        <p><?php echo $_SESSION['quantity']; ?></p>
+        <input type="submit" name="increment" value="+">
+        <input type="submit" name="decrement" value="-">
+    </form>
+
+    <?php
+    return ob_get_clean();
+}
+add_shortcode('compteur_quantite', 'compteur_quantite_shortcode');
 // ajout support du logo
 add_action('after_setup_theme','logo_support');
 if ( !function_exists('logo_support')){
