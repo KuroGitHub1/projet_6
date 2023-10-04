@@ -2,14 +2,33 @@
 # This file is distributed under the same license as the Plugins - Elementor Website Builder &#8211; More than Just a Page Builder - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-09-13 13:38:56+0000\n"
+"PO-Revision-Date: 2023-10-01 16:04:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.8\n"
+"X-Generator: GlotPress/4.0.0-alpha.9\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Elementor Website Builder &#8211; More than Just a Page Builder - Stable (latest release)\n"
+
+#: modules/site-navigation/module.php:72
+msgid "Pages Panel"
+msgstr "Panneau des pages"
+
+#: modules/nested-tabs/widgets/nested-tabs.php:183
+#: modules/nested-tabs/widgets/nested-tabs.php:875
+msgid "Below"
+msgstr "Dessous"
+
+#: modules/nested-tabs/widgets/nested-tabs.php:179
+#: modules/nested-tabs/widgets/nested-tabs.php:867
+msgid "Above"
+msgstr "Dessus"
+
+#: includes/elements/container.php:353
+msgctxt "Flex Container Control"
+msgid "Gaps"
+msgstr "Écarts"
 
 #: modules/nested-accordion/widgets/nested-accordion.php:354
 msgid "Space between Items"
@@ -71,6 +90,10 @@ msgstr "Apps"
 #: modules/apps/admin-apps-page.php:17
 msgid "Learn more about this page."
 msgstr "En apprendre plus concernant cette page."
+
+#: modules/apps/admin-apps-page.php:15
+msgid "Popular Apps, New Possibilities."
+msgstr "Applications populaires, nouvelles possibilités."
 
 #: includes/widgets/video.php:210
 msgid "Choose Video File"
@@ -697,7 +720,7 @@ msgstr "Ignorer l’icône"
 
 #: includes/elements/container.php:645
 msgid "Don’t add links to elements nested in this container - it will break the layout."
-msgstr "N’ajouter pas de lien vers les éléments placés dans les conteneurs - cela va briser la mise en page."
+msgstr "N’ajoutez pas de lien aux éléments imbriqués dans ce conteneur ; cela va briser la mise en page."
 
 #: includes/editor-templates/panel.php:60
 msgid "Any time you can change the settings in %1$sUser Preferences%2$s"
@@ -4749,7 +4772,7 @@ msgstr "Obtenez plus avec Elementor Pro"
 #: includes/widgets/video.php:680 modules/shapes/widgets/text-path.php:204
 #: modules/styleguide/module.php:147
 msgid "Off"
-msgstr "Arrêt"
+msgstr "Inactif"
 
 #: core/settings/editor-preferences/model.php:164
 #: includes/base/element-base.php:849 includes/base/element-base.php:1013
@@ -4758,7 +4781,7 @@ msgstr "Arrêt"
 #: includes/widgets/video.php:681 modules/shapes/widgets/text-path.php:203
 #: modules/styleguide/module.php:148
 msgid "On"
-msgstr "Marche"
+msgstr "Actif"
 
 #: includes/widgets/traits/button-trait.php:37
 msgid "Extra Large"
