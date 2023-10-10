@@ -15,6 +15,44 @@ Updated: 2023-09-15 13:03:32
 #header {
   display: flex;
   height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#branding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+}
+
+#menu-menu-1 {
+  gap: 60px;
+}
+
+#menu a {
+  text-decoration: none;
+  font-family: Syne;
+  color: #000;
+  font-size: 16px;
+}
+
+#menu-item-496 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 236px;
+  height: 80px;
+  background-color: #dc9f96;
+}
+
+#menu-item-496 a {
+  color: white;
+}
+
+.custom-logo-link img {
+  width: 201px;
+  height: 19px;
 }
 
 nav {

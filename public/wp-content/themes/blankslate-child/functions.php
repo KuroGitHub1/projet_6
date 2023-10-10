@@ -22,7 +22,6 @@ endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 // END ENQUEUE PARENT ACTION
-add_shortcode('compteur_quantite', 'compteur_quantite_shortcode');
 // ajout support du logo
 add_action('after_setup_theme','logo_support');
 if ( !function_exists('logo_support')){

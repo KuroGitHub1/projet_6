@@ -10,16 +10,16 @@
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
 <div id="branding">
-<div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
+    <?php
+    if ( function_exists( 'the_custom_logo' ) ) {
+        the_custom_logo();
+    }
+    ?>
+    <div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
 </div>
 <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 <?php 
-if ( function_exists( 'the_custom_logo' ) ) {
-	the_custom_logo();
-}
-
 wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
-
 </nav>
 </header>
 <div id="container">
