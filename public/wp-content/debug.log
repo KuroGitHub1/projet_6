@@ -68,3 +68,4 @@
 [05-Oct-2023 10:36:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 28
 [05-Oct-2023 10:36:46 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 28
 [05-Oct-2023 10:36:49 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 28
+[12-Oct-2023 11:04:02 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 46

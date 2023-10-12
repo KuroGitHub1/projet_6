@@ -46,13 +46,31 @@ Updated: 2023-09-15 13:03:32
   background-color: #dc9f96;
 }
 
+#menu-item-496:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 236px;
+  height: 80px;
+  background-color: #c02e44;
+}
+
 #menu-item-496 a {
   color: white;
 }
 
+#menu-item-497 {
+  order: -1;
+}
+
+#menu-item-497:hover {
+  font-weight: 700;
+  font-size: 13px;
+}
+
 .custom-logo-link img {
   width: 201px;
-  height: 19px;
+  height: auto;
 }
 
 nav {
@@ -64,15 +82,12 @@ nav {
   align-items: center;
 }
 
-#test {
-  color: #326238;
-}
-
 /* footer */
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Syne;
   font-size: 16px;
   height: 60px;
 }
