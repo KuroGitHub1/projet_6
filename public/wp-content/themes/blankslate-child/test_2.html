@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulaire de commande</title>
+    <style>
+      .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .formulaire {
+        font-family: "Syne", sans-serif;
+        display: flex;
+        /*flex-wrap: wrap;*/
+        justify-content: center;
+        /*gap: 50px;*/
+        padding: 0 30px 30px 30px;
+      }
+      .formulaire label {
+        font-size: 20px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+      }
+      .bouton-2:hover {
+        background-color: #c02e44;
+        cursor: pointer;
+      }
+      .qty {
+        width: 100%;
+        display: flex;
+      }
+      .qty input {
+        width: 51px;
+        height: 58px;
+        text-align: center;
+        border: none;
+        border-radius: 5px 0 0 5px;
+      }
+      .qty ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: black;
+        font-family: Inter;
+        font-size: 16px;
+      }
+      .qty :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: black;
+        font-family: Inter;
+        font-size: 16px;
+      }
+      .qty ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: black;
+        font-family: Inter;
+        font-size: 16px;
+      }
+      .compteur {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 31px;
+        height: 58px;
+        font-size: 20px;
+        border-radius: 0 5px 5px 0;
+        background-color: #dc9f96;
+        color: white;
+      }
+      .ligne {
+        border-bottom: 1px solid white;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      .bouton-2 {
+        display: flex;
+        width: 100px;
+        height: 58px;
+        padding: 9px 0px 10px 0px;
+        margin-left: 10px;
+        border-radius: 5px;
+        font-family: Syne;
+        font-size: 15px;
+        background-color: #e0b9b4;
+        color: white;
+        border: none;
+        justify-content: center;
+        align-items: center;
+      }
+      .block-qty {
+        display: flex;
+        padding-bottom: 40px;
+        gap: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">
+      <div class="block-qty">
+        <div class="qty">
+          <input type="text" id="nombre" name="nombre" placeholder="0" />
+          <div class="compteur">
+            <div class="label-container">
+              <label class="ligne" for="agumentation">+</label>
+            </div>
+            <div class="label-container">
+              <label for="diminution">-</label>
+            </div>
+          </div>
+          <button class="bouton-2">Ok</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
