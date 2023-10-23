@@ -10,7 +10,9 @@ Version: 2023.1694783012
 Updated: 2023-09-15 13:03:32
 
 */
-
+body {
+  margin: 0;
+}
 /* header */
 #header {
   display: flex;
@@ -94,4 +96,9 @@ footer {
 
 h1 {
   font-weight: 900;
+}
+
+.bloc_images {
+  display: flex;
+  gap: 50px;
 }
