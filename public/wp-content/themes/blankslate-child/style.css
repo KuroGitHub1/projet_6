@@ -98,7 +98,43 @@ h1 {
   font-weight: 900;
 }
 
+/* backoffice page formulaire */
+
 .bloc_images {
   display: flex;
   gap: 50px;
 }
+
+.form_img {
+  width: 200px;
+  height: auto;
+}
+
+.img_select {
+  margin-bottom: 30px;
+}
+
+.zone_img input {
+  width: 200px;
+}
+
+.zone_img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nom_img {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+.nom_img label {
+  display: block;
+}
+
+/* .bloc-image:not(:last-child) {
+  margin-bottom: 30px;
+} */
