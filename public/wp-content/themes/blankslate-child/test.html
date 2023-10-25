@@ -1,223 +1,275 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>formulaire de commande</title>
-    <style>
-      .block {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .formulaire {
-        font-family: "Syne", sans-serif;
-        display: flex;
-        /*flex-wrap: wrap;*/
-        justify-content: center;
-        /*gap: 50px;*/
-        padding: 0 30px 30px 30px;
-      }
-      .formulaire h2 {
-        font-size: 30px;
-        font-weight: 700;
-      }
-      .formulaire label {
-        font-size: 20px;
-        padding-top: 20px;
-        margin-bottom: 20px;
-      }
-      .info {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        padding-right: 50px;
-        border-right: 1px solid white;
-      }
-      .info input {
-        width: 383px;
-        height: 71px;
-        border-radius: 7px;
-        border: none;
-      }
-      .livraison {
-        display: flex;
-        flex-direction: column;
-        padding-left: 50px;
-        color: white;
-      }
-      .livraison input {
-        width: 383px;
-        height: 71px;
-        border-radius: 7px;
-        border: none;
-      }
-      .bouton {
-        display: flex;
-        width: 198px;
-        height: 55px;
-        padding: 9px 57px 9px 56px;
-        font-size: 15px;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        color: white;
-        background: #e0b9b4;
-      }
-      .bouton:hover {
-        background-color: #c02e44;
-        cursor: pointer;
-      }
-      #cb {
-        border-radius: 5px;
-      }
-      .qty {
-        width: 100%;
-        display: flex;
-      }
-      .qty input {
-        width: 51px;
-        height: 58px;
-        text-align: center;
-        border: none;
-        border-radius: 5px 0 0 5px;
-      }
-      .qty ::placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: black;
-        font-family: Inter;
-        font-size: 16px;
-      }
+<style>
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .formulaire {
+    font-family: "Syne", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px 30px 30px;
+  }
+  .formulaire h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .formulaire label {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-right: 50px;
+    border-right: 1px solid white;
+  }
+  .info input {
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    border: none;
+  }
+  .livraison {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    color: white;
+  }
+  .livraison input {
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    border: none;
+  }
+  .bouton {
+    display: flex;
+    width: 198px;
+    height: 55px;
+    padding: 9px 57px 9px 56px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    background: #e0b9b4;
+  }
+  .bouton:hover {
+    background-color: #c02e44;
+    cursor: pointer;
+  }
+  #cb {
+    border-radius: 5px;
+  }
+  .zone-qty {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .qty {
+    width: 100%;
+    display: flex;
+  }
+  .qty input {
+    width: 51px;
+    height: 58px;
+    text-align: center;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  .qty ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    font-family: Inter;
+    font-size: 16px;
+  }
 
-      .qty :-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: black;
-        font-family: Inter;
-        font-size: 16px;
-      }
+  .qty :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: black;
+    font-family: Inter;
+    font-size: 16px;
+  }
 
-      .qty ::-ms-input-placeholder {
-        /* Microsoft Edge */
-        color: black;
-        font-family: Inter;
-        font-size: 16px;
-      }
-      .compteur {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 31px;
-        height: 58px;
-        font-size: 20px;
-        border-radius: 0 5px 5px 0;
-        background-color: #dc9f96;
-        color: white;
-      }
-      .ligne {
-        border-bottom: 1px solid white;
-        padding-right: 10px;
-        padding-left: 10px;
-      }
-      .bouton-2 {
-        display: flex;
-        width: 100px;
-        height: 58px;
-        padding: 9px 0px 10px 0px;
-        margin-left: 10px;
-        border-radius: 5px;
-        font-family: Syne;
-        font-size: 15px;
-        background-color: #e0b9b4;
-        color: white;
-        border: none;
-        justify-content: center;
-        align-items: center;
-      }
-      .block-qty {
-        display: flex;
-        border-bottom: 1px solid white;
-        padding-bottom: 40px;
-        gap: 28px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="block">
-      <form class="formulaire" action="#" method="post">
-        <div class="block-qty">
-          <div class="qty">
-            <input type="text" id="nombre" name="nombre" placeholder="0" />
-            <div class="compteur">
-              <div class="label-container">
-                <label class="ligne" for="agumentation">+</label>
-              </div>
-              <div class="label-container">
-                <label for="diminution">-</label>
-              </div>
-            </div>
-            <button class="bouton-2">Ok</button>
-          </div>
-          <div class="qty">
-            <input type="text" id="nombre" name="nombre" placeholder="0" />
-            <div class="compteur">
-              <div class="label-container">
-                <label class="ligne" for="agumentation">+</label>
-              </div>
-              <div class="label-container">
-                <label for="diminution">-</label>
-              </div>
-            </div>
-            <button class="bouton-2">Ok</button>
-          </div>
-          <div class="qty">
-            <input type="text" id="nombre" name="nombre" placeholder="0" />
-            <div class="compteur">
-              <div class="label-container">
-                <label class="ligne" for="agumentation">+</label>
-              </div>
-              <div class="label-container">
-                <label for="diminution">-</label>
-              </div>
-            </div>
-            <button class="bouton-2">Ok</button>
-          </div>
-          <div class="qty">
-            <input type="text" id="nombre" name="nombre" placeholder="0" />
-            <div class="compteur">
-              <div class="label-container">
-                <label class="ligne" for="agumentation">+</label>
-              </div>
-              <div class="label-container">
-                <label for="diminution">-</label>
-              </div>
-            </div>
-            <button class="bouton-2">Ok</button>
-          </div>
+  .qty ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: black;
+    font-family: Inter;
+    font-size: 16px;
+  }
+  .compteur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 58px;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+    background-color: #dc9f96;
+    color: white;
+  }
+  .ligne {
+    border-bottom: 1px solid white;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .bouton-2 {
+    display: flex;
+    width: 100px;
+    height: 58px;
+    padding: 9px 0px 10px 0px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-family: Syne;
+    font-size: 15px;
+    background-color: #e0b9b4;
+    color: white;
+    border: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .bouton-2:hover {
+    background-color: #c02e44;
+    cursor: pointer;
+  }
+  .block-qty {
+    display: flex;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
+    gap: 28px;
+  }
+  .form-img {
+    display: flex;
+    width: 200px;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .form-img h3 {
+    font-family: "Syne", sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+  }
+</style>
+<div class="block">
+  <!-- formulaire  de qty -->
+  <div class="formulaire" action="#" method="post">
+    <div class="block-qty">
+      <!-- block qty 1 -->
+      <div class="zone-qty">
+        <div
+          class="form-img"
+          style="background-image: url([img_du_produit id=1])"
+        >
+          <h3>[nom_du_produit id=1]</h3>
         </div>
-      </form>
-      <form class="formulaire" action="#" method="post">
-        <div class="info">
-          <h2>Vos informations</h2>
-          <label for="nom">Nom</label>
-          <input type="text" id="nom" name="nom" />
-          <label for="prenom">Prénom</label>
-          <input type="text" id="prenom" name="prenom" />
-          <label for="e-mail">E-mail</label>
-          <input type="text" id="e-mail" name="e-mail" />
+        <div class="qty">
+          <input type="text" id="nombre" name="nombre" placeholder="0" />
+          <div class="compteur">
+            <div class="label-container">
+              <label class="ligne" for="agumentation">+</label>
+            </div>
+            <div class="label-container">
+              <label for="diminution">-</label>
+            </div>
+          </div>
+          <button class="bouton-2">Ok</button>
         </div>
-        <div class="livraison">
-          <h2>Livraison</h2>
-          <label for="adresse">Adresse de livraison</label>
-          <input type="text" id="adresse" name="adresse" />
-          <label for="code">Code postal</label>
-          <input type="text" id="code" name="code" />
-          <label for="ville">Ville</label>
-          <input type="text" id="ville" name="ville" />
+      </div>
+      <!-- block qty 2 -->
+      <div class="zone-qty">
+        <div
+          class="form-img"
+          style="background-image: url([img_du_produit id=2])"
+        >
+          <h3>[nom_du_produit id=2]</h3>
         </div>
-      </form>
-      <input id="cb" class="bouton" type="button" value="Commander" />
+        <div class="qty">
+          <input type="text" id="nombre" name="nombre" placeholder="0" />
+          <div class="compteur">
+            <div class="label-container">
+              <label class="ligne" for="agumentation">+</label>
+            </div>
+            <div class="label-container">
+              <label for="diminution">-</label>
+            </div>
+          </div>
+          <button class="bouton-2">Ok</button>
+        </div>
+      </div>
+      <!-- block qty 3 -->
+      <div class="zone-qty">
+        <div
+          class="form-img"
+          style="background-image: url([img_du_produit id=3])"
+        >
+          <h3>[nom_du_produit id=3]</h3>
+        </div>
+        <div class="qty">
+          <input type="text" id="nombre" name="nombre" placeholder="0" />
+          <div class="compteur">
+            <div class="label-container">
+              <label class="ligne" for="agumentation">+</label>
+            </div>
+            <div class="label-container">
+              <label for="diminution">-</label>
+            </div>
+          </div>
+          <button class="bouton-2">Ok</button>
+        </div>
+      </div>
+      <!-- block qty 4 -->
+      <div class="zone-qty">
+        <div
+          class="form-img"
+          style="background-image: url([img_du_produit id=4])"
+        >
+          <h3>[nom_du_produit id=4]</h3>
+        </div>
+        <div class="qty">
+          <input type="text" id="nombre" name="nombre" placeholder="0" />
+          <div class="compteur">
+            <div class="label-container">
+              <label class="ligne" for="agumentation">+</label>
+            </div>
+            <div class="label-container">
+              <label for="diminution">-</label>
+            </div>
+          </div>
+          <button class="bouton-2">Ok</button>
+        </div>
+      </div>
     </div>
-  </body>
-</html>
+  </div>
+  [hidden product_name_1 default:post_meta] [hidden product_name_2
+  default:post_meta] [hidden product_name_3 default:post_meta] [hidden
+  product_name_4 default:post_meta]
+  <!-- info du formulaire -->
+  <div class="formulaire" action="#" method="post">
+    <div class="info">
+      <h2>Vos informations</h2>
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" />
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" />
+      <label for="e-mail">E-mail</label>
+      <input type="text" id="e-mail" name="e-mail" />
+    </div>
+    <div class="livraison">
+      <h2>Livraison</h2>
+      <label for="adresse">Adresse de livraison</label>
+      <input type="text" id="adresse" name="adresse" />
+      <label for="code">Code postal</label>
+      <input type="text" id="code" name="code" />
+      <label for="ville">Ville</label>
+      <input type="text" id="ville" name="ville" />
+    </div>
+  </div>
+  <input id="cb" class="bouton" type="submit" value="Commander" />
+</div>

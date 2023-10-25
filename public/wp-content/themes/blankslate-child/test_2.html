@@ -3,115 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>formulaire de commande</title>
+    <title>Formulaire de Contact</title>
     <style>
-      .block {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
       .formulaire {
         font-family: "Syne", sans-serif;
-        display: flex;
-        /*flex-wrap: wrap;*/
-        justify-content: center;
-        /*gap: 50px;*/
-        padding: 0 30px 30px 30px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 10px;
       }
+
       .formulaire label {
+        display: block;
         font-size: 20px;
-        padding-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        text-align: left; /* Aligner le texte à gauche */
       }
-      .bouton-2:hover {
-        background-color: #c02e44;
+
+      .formulaire input[type="text"],
+      .formulaire input[type="email"] {
+        width: 383px;
+        height: 71px;
+        padding: 10px;
+        margin-bottom: 20px; /* Ajusté le margin-bottom */
+        border: none; /* Retirer la bordure */
+        border-radius: 7px; /* Ajusté le border-radius */
+        resize: none; /* Empêche la redimension */
+      }
+
+      .formulaire textarea {
+        width: 383px;
+        height: 237px; /* Ajusté la hauteur */
+        padding: 10px;
+        margin-bottom: 20px; /* Ajusté le margin-bottom */
+        border: none; /* Retirer la bordure */
+        resize: none; /* Empêche la redimension */
+      }
+
+      .formulaire input[type="submit"] {
+        width: 198px;
+        height: 55px;
+        background: #e0b9b4; /* Couleur de fond */
+        color: #fff;
+        padding: 10px 20px;
+        border: none; /* Retirer la bordure */
+        border-radius: 5px;
         cursor: pointer;
       }
-      .qty {
-        width: 100%;
-        display: flex;
-      }
-      .qty input {
-        width: 51px;
-        height: 58px;
-        text-align: center;
-        border: none;
-        border-radius: 5px 0 0 5px;
-      }
-      .qty ::placeholder {
-        /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: black;
-        font-family: Inter;
-        font-size: 16px;
-      }
-      .qty :-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: black;
-        font-family: Inter;
-        font-size: 16px;
-      }
-      .qty ::-ms-input-placeholder {
-        /* Microsoft Edge */
-        color: black;
-        font-family: Inter;
-        font-size: 16px;
-      }
-      .compteur {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 31px;
-        height: 58px;
-        font-size: 20px;
-        border-radius: 0 5px 5px 0;
-        background-color: #dc9f96;
-        color: white;
-      }
-      .ligne {
-        border-bottom: 1px solid white;
-        padding-right: 10px;
-        padding-left: 10px;
-      }
-      .bouton-2 {
-        display: flex;
-        width: 100px;
-        height: 58px;
-        padding: 9px 0px 10px 0px;
-        margin-left: 10px;
-        border-radius: 5px;
-        font-family: Syne;
-        font-size: 15px;
-        background-color: #e0b9b4;
-        color: white;
-        border: none;
-        justify-content: center;
-        align-items: center;
-      }
-      .block-qty {
-        display: flex;
-        padding-bottom: 40px;
-        gap: 28px;
+
+      .formulaire input[type="submit"]:hover {
+        background-color: #c02e44; /* Couleur de fond au survol */
       }
     </style>
   </head>
   <body>
-    <div class="block">
-      <div class="block-qty">
-        <div class="qty">
-          <input type="text" id="nombre" name="nombre" placeholder="0" />
-          <div class="compteur">
-            <div class="label-container">
-              <label class="ligne" for="agumentation">+</label>
-            </div>
-            <div class="label-container">
-              <label for="diminution">-</label>
-            </div>
-          </div>
-          <button class="bouton-2">Ok</button>
-        </div>
-      </div>
-    </div>
+    <form class="formulaire" action="#" method="POST">
+      <label for="nom">Nom</label>
+      <!-- Retiré le ":" -->
+      <input type="text" id="nom" name="nom" required />
+
+      <label for="email">E-mail</label>
+      <!-- Retiré le ":" -->
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <!-- Retiré le ":" -->
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <input type="submit" value="Envoyer" />
+    </form>
   </body>
 </html>

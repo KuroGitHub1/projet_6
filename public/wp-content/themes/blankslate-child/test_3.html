@@ -1,100 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>formulaire de commande</title>
-    <style>
-      .block {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .formulaire {
-        font-family: "Syne", sans-serif;
-        display: flex;
-        /*flex-wrap: wrap;*/
-        justify-content: center;
-        /*gap: 50px;*/
-        padding: 0 30px 30px 30px;
-      }
-      .formulaire h2 {
-        font-size: 30px;
-        font-weight: 700;
-      }
-      .formulaire label {
-        font-size: 20px;
-        padding-top: 20px;
-        margin-bottom: 20px;
-      }
-      .info {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        padding-right: 50px;
-        border-right: 1px solid white;
-      }
-      .info input {
-        width: 383px;
-        height: 71px;
-        border-radius: 7px;
-        border: none;
-      }
-      .livraison {
-        display: flex;
-        flex-direction: column;
-        padding-left: 50px;
-        color: white;
-      }
-      .livraison input {
-        width: 383px;
-        height: 71px;
-        border-radius: 7px;
-        border: none;
-      }
-      .bouton {
-        display: flex;
-        width: 198px;
-        height: 55px;
-        padding: 9px 57px 9px 56px;
-        font-size: 15px;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        color: white;
-        background: #e0b9b4;
-      }
-      .bouton:hover {
-        background-color: #c02e44;
-        cursor: pointer;
-      }
-      #cb {
-        border-radius: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="block">
-      <div class="info">
-        <h2>Vos informations</h2>
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" />
-        <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" name="prenom" />
-        <label for="e-mail">E-mail</label>
-        <input type="text" id="e-mail" name="e-mail" />
-      </div>
-      <div class="livraison">
-        <h2>Livraison</h2>
-        <label for="adresse">Adresse de livraison</label>
-        <input type="text" id="adresse" name="adresse" />
-        <label for="code">Code postal</label>
-        <input type="text" id="code" name="code" />
-        <label for="ville">Ville</label>
-        <input type="text" id="ville" name="ville" />
-      </div>
-      <input id="cb" class="bouton" type="button" value="Commander" />
-    </div>
-  </body>
-</html>
+<style>
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formulaire {
+    font-family: "Syne", sans-serif;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    /*gap: 50px;*/
+    padding: 0 30px 30px 30px;
+  }
+  .formulaire h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .formulaire label {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-right: 50px;
+    border-right: 1px solid white;
+  }
+  .info input {
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    border: none;
+  }
+  .livraison {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    color: white;
+  }
+  .livraison input {
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    border: none;
+  }
+  .bouton {
+    display: flex;
+    width: 198px;
+    height: 55px;
+    padding: 9px 57px 9px 56px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    background: #e0b9b4;
+  }
+  .bouton:hover {
+    background-color: #c02e44;
+    cursor: pointer;
+  }
+  #cb {
+    border-radius: 5px;
+  }
+</style>
+<div class="block">
+  <div class="form-img" style="background-image: url([img_du_produit id=1])">
+    <h4>[nom_du_produit id=1]</h4>
+  </div>
+  <input type="nomber" name="qty_produit_1" />
+
+  [hidden product_name_1 default:post_meta]
+  <div class="info">
+    <h2>Vos informations</h2>
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" />
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom" />
+    <label for="e-mail">E-mail</label>
+    <input type="text" id="e-mail" name="e-mail" />
+  </div>
+  <div class="livraison">
+    <h2>Livraison</h2>
+    <label for="adresse">Adresse de livraison</label>
+    <input type="text" id="adresse" name="adresse" />
+    <label for="code">Code postal</label>
+    <input type="text" id="code" name="code" />
+    <label for="ville">Ville</label>
+    <input type="text" id="ville" name="ville" />
+  </div>
+  [submit "Commander"]
+</div>
