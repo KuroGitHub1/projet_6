@@ -2,7 +2,7 @@
 </div>
 <footer>
 <div>
-<p>Mentions légales</p>
+<a class="footer" href="#">Mentions légales</a>
 </div>
 </footer>
 </div>

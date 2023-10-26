@@ -550,3 +550,47 @@ Stack trace:
 [25-Oct-2023 16:06:13 UTC] PHP Warning:  Undefined array key "product_name_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
 [25-Oct-2023 16:06:13 UTC] PHP Warning:  Undefined array key "form_image_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
 [25-Oct-2023 16:06:13 UTC] PHP Warning:  Undefined array key "product_name_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "form_image_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "product_name_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "form_image_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "product_name_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "form_image_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "product_name_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "form_image_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "product_name_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "form_image_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "product_name_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "form_image_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "product_name_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "form_image_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "product_name_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "form_image_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:25 UTC] PHP Warning:  Undefined array key "product_name_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:41 UTC] PHP Warning:  Undefined array key "form_image_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:41 UTC] PHP Warning:  Undefined array key "product_name_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:41 UTC] PHP Warning:  Undefined array key "form_image_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:41 UTC] PHP Warning:  Undefined array key "product_name_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:41 UTC] PHP Warning:  Undefined array key "form_image_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:41 UTC] PHP Warning:  Undefined array key "product_name_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:41 UTC] PHP Warning:  Undefined array key "form_image_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:41 UTC] PHP Warning:  Undefined array key "product_name_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:55 UTC] PHP Warning:  Undefined array key "form_image_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:55 UTC] PHP Warning:  Undefined array key "product_name_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:55 UTC] PHP Warning:  Undefined array key "form_image_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:55 UTC] PHP Warning:  Undefined array key "product_name_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:55 UTC] PHP Warning:  Undefined array key "form_image_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:55 UTC] PHP Warning:  Undefined array key "product_name_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:12:55 UTC] PHP Warning:  Undefined array key "form_image_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 10:12:55 UTC] PHP Warning:  Undefined array key "product_name_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 10:45:36 UTC] PHP Warning:  Undefined property: stdClass::$slug in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 47
+[26-Oct-2023 10:45:36 UTC] PHP Warning:  Undefined property: stdClass::$slug in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 47
+[26-Oct-2023 10:48:26 UTC] PHP Warning:  Undefined property: stdClass::$name in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 47
+[26-Oct-2023 10:48:26 UTC] PHP Warning:  Undefined property: stdClass::$name in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 47
+[26-Oct-2023 12:42:28 UTC] PHP Warning:  Undefined array key "form_image_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 12:42:28 UTC] PHP Warning:  Undefined array key "product_name_1" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 12:42:28 UTC] PHP Warning:  Undefined array key "form_image_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 12:42:28 UTC] PHP Warning:  Undefined array key "product_name_2" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 12:42:28 UTC] PHP Warning:  Undefined array key "form_image_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 12:42:28 UTC] PHP Warning:  Undefined array key "product_name_3" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
+[26-Oct-2023 12:42:28 UTC] PHP Warning:  Undefined array key "form_image_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 103
+[26-Oct-2023 12:42:28 UTC] PHP Warning:  Undefined array key "product_name_4" in C:\Users\kevin\OneDrive\Images\formation\projet_6\app\public\wp-content\themes\blankslate-child\functions.php on line 108
