@@ -145,3 +145,8 @@ h1 {
 .nom_img label {
   display: block;
 }
+@media screen and (max-width: 1024px) {
+  #h2-commende {
+    text-align: center;
+  }
+}
