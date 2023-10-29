@@ -28,7 +28,7 @@ body {
   margin-left: 40px;
 }
 
-#menu-menu-1 {
+#menu-menu-2 {
   gap: 60px;
 }
 
@@ -48,7 +48,7 @@ body {
   font-size: 16px;
 }
 
-#menu-item-496 {
+.menu-item-496 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +57,7 @@ body {
   background-color: #dc9f96;
 }
 
-#menu-item-496:hover {
+.menu-item-496:hover {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,15 +66,15 @@ body {
   background-color: #c02e44;
 }
 
-#menu-item-496 a {
+.menu-item-496 a {
   color: white;
 }
 
-#menu-item-497 {
+.menu-item-497 {
   order: -1;
 }
 
-#menu-item-497:hover {
+.menu-item-497:hover {
   font-weight: 700;
   font-size: 13px;
 }
@@ -91,6 +91,10 @@ nav {
 .menu {
   display: flex;
   align-items: center;
+}
+
+#menu-mobile li {
+  margin-bottom: 30px;
 }
 
 /* footer */
