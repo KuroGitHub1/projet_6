@@ -1,9 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test responsive</title>
-  </head>
-  <body></body>
-</html>
+<style>
+  .formulaire {
+    font-family: "Syne", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .formulaire label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .formulaire input {
+    width: 383px;
+    height: 71px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 7px;
+    resize: none;
+  }
+
+  .formulaire textarea {
+    width: 383px;
+    height: 237px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    resize: none;
+  }
+
+  .boutonenvoyer {
+    width: 198px;
+    height: 55px;
+    background: #e0b9b4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .boutonenvoyer:hover {
+    background-color: #c02e44;
+  }
+  @media screen and (max-width: 767px) {
+    .formulaire label {
+      text-align: center;
+    }
+    .formulaire input {
+      width: 300px;
+    }
+    .formulaire textarea {
+      width: 300px;
+    }
+  }
+</style>
+<div class="formulaire">
+  <label for="nom">Nom</label>
+
+  <input type="text" id="nom" name="nom" />
+
+  <label for="email">E-mail</label>
+
+  <input type="email" id="email" name="email" />
+
+  <label for="message">Message</label>
+
+  <textarea id="message" name="message" rows="6"></textarea>
+
+  [submit class:boutonenvoyer "Envoyer"]
+</div>
